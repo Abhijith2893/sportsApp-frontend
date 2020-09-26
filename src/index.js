@@ -1,13 +1,28 @@
+import { Amplify } from 'aws-amplify';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
+import config from './config';
+import './index.css';
 import * as serviceWorker from './serviceWorker';
 
+Amplify.configure({
+  API: {
+    endpoints: [
+      {
+        name: "sportsApp",
+        endpoint: config.apiGateway.URL,
+        region: config.apiGateway.REGION
+      },
+    ]
+  }
+});
+
 ReactDOM.render(
-  <React.StrictMode>
+  <Router>
     <App />
-  </React.StrictMode>,
+  </Router>,
   document.getElementById('root')
 );
 
