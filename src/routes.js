@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Home from "./containers/home";
 import NotFound from "./containers/notFound";
-import Soccer from "./views/Soccer/soccer";
+import Soccer from "./views/Soccer";
 
 export default function Routes() {
   return (

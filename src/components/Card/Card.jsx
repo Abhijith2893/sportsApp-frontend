@@ -4,7 +4,7 @@ const Card = (props) => {
     return(
         <div>
             <h3>{props.name}</h3>
-            <div>{props.logo}</div>
+            <img src={props.logo} alt={props.name} style={{height:'100px'}}/>
         </div>
     )
 };

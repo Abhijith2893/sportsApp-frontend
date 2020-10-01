@@ -7,6 +7,7 @@ export default function Home() {
       <div className="lander">
         <h1>Sports App</h1>
         <p>Webpage with sports schedule details</p>
+        <a href="/soccer">Soccer</a>
       </div>
     </div>
   );
