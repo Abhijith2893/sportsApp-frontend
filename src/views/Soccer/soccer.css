@@ -1,4 +1,10 @@
-.title{
+.SoccerPage-title{
     text-align: center;
     font-weight: 600;
+}
+
+.SoccerPage-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
