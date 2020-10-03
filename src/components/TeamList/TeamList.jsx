@@ -1,8 +1,8 @@
 import axios from 'axios';
 import React, { useEffect, useState } from "react";
 import Card from '../../components/Card/Card';
-import './TeamList.css';
 import Loading from '../../components/Loading/Loading';
+import './TeamList.css';
 
 const TeamList = () => {
     const [state, setState] = useState([]);
@@ -16,17 +16,16 @@ const TeamList = () => {
     }, []);
 
     return (
-        <>
-            {!state.length ? <div><Loading value="Getting EPL team list......" /></div> : 
-                <div className='TeamList'>
-                    <div className="TeamList-cards">
-                        {state.map((team,i) => {
-                            return <Card name={team.name} logo={team.logo} key={i}/>
-                        })}
-                    </div>
+        <div className='team-list'>
+            {!state.length ? 
+                <Loading value="Getting EPL team list......" /> : 
+                <div className="team-list__cards">
+                    {state.map((team,i) => {
+                        return <Card name={team.name} logo={team.logo} key={i}/>
+                    })}
                 </div>
             }
-        </>
+        </div>
     )
 }
 

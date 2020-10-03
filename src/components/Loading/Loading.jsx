@@ -3,8 +3,8 @@ import './Loading.css';
 
 const Loading = (props) => {
     return(
-        <div className="Loading">
-            <div className="Loading-title">
+        <div className="loading">
+            <div className="loading__title">
                 {props.value}
             </div>
         </div>

@@ -1,4 +1,10 @@
-.SoccerPage-title{
+.soccer-page__details{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.soccer-page__title{
     text-align: center;
     font-weight: 600;
+    margin: 5rem;
 }

@@ -1,5 +1,11 @@
-.TeamList-cards{
+.team-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vw;
+}
+.team-list__cards{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: left;
 }

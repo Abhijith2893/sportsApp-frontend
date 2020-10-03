@@ -3,9 +3,9 @@ import './Card.css';
 
 const Card = (props) => {
     return(
-        <div className="SoccerCard">
-            <h3 className="SoccerCard-title">{props.name}</h3>
-            <img className="SoccerCard-logo" src={props.logo} alt={props.name} />
+        <div className="soccer-card">
+            <img className="soccer-card__logo" src={props.logo} alt={props.name} />
+            <h3 className="soccer-card__title">{props.name}</h3>
         </div>
     )
 };
